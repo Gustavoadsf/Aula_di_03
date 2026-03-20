@@ -1,0 +1,28 @@
+*{
+    /*bloco de reset*/
+    box-sizing: border-box;
+}
+body{
+    margin: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(65, 36, 36);
+}
+header{
+    background-color: rgb(41, 30, 30);
+    color: gray;
+    text-align: center; /*centraliza o texto*/
+}
+nav a{ /*nav navigation a a, de link, vou trabalhar só no link*/
+    color: white;
+    text-decoration: none; /* tirei toda a decoração do texto*/
+    padding: 10px;
+}
+.bloco{ /*decoração do class, a class procede de "." */
+    background-color: white;
+    color: black;
+    border: 1px solid gray; /*borda geral tracejada*/
+    border-radius: 6px;
+    padding: 20;
+    margin-bottom: 10px; /*distancia entre os blocos*/
+    border-top: 5px solid gray; /*borda superior solida*/
+}
