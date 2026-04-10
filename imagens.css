@@ -1,0 +1,46 @@
+*{
+    /*bloco de reset*/
+    box-sizing: border-box;
+}
+body{
+    margin: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(65, 36, 36);
+}
+header{
+    background-color: rgb(41, 30, 30);
+    color: rgb(255, 255, 255);
+    text-align: center; /*centraliza o texto*/
+}
+nav a{ /*nav navigation a a, de link, vou trabalhar só no link*/
+    color: rgb(255, 255, 255);
+    text-decoration: none; /* tirei toda a decoração do texto*/
+    padding: 10px;
+}
+#galeria{/*significa id, onde coloca-se por ex: id="galeria"*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;/*espaço entre elementos do id*/
+    justify-content: flex-start; /*reforçando que ele vai estar "flexivel"*/
+    padding: 20px;
+}
+.foto{
+    background: white;
+    padding: 10px 10px 50px 10px; /*lat dir, esq, baixo e topo*/
+    border: 3px solid black;
+    box-shadow: 0 2px 5px black;
+    width: 300px;/*largura*/
+    text-align: center;/*alinhamento ao centro*/
+    border-radius: 4px;
+}
+.foto img{
+    width: 100%;
+    height: auto;
+    object-fit: cover; /*efeito de sobrepor*/
+    display: block;
+}
+footer{
+    font-size: xx-large;
+    color: white;
+    text-align: center;
+}

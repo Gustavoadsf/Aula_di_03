@@ -9,20 +9,23 @@ body{
 }
 header{
     background-color: rgb(41, 30, 30);
-    color: gray;
+    color: rgb(255, 255, 255);
     text-align: center; /*centraliza o texto*/
 }
 nav a{ /*nav navigation a a, de link, vou trabalhar só no link*/
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none; /* tirei toda a decoração do texto*/
     padding: 10px;
 }
 .bloco{ /*decoração do class, a class procede de "." */
-    background-color: white;
-    color: black;
+    background-color: rgb(59, 53, 53);
+    color: rgb(255, 255, 255);
     border: 1px solid gray; /*borda geral tracejada*/
     border-radius: 6px;
     padding: 20;
     margin-bottom: 10px; /*distancia entre os blocos*/
     border-top: 5px solid gray; /*borda superior solida*/
+}
+footer{
+color: white;
 }
