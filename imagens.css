@@ -6,11 +6,17 @@ body{
     margin: 100;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(65, 36, 36);
+    padding: 20px;
+}
+main{
+    color: rgb(255, 255, 255);
 }
 header{
     background-color: rgb(41, 30, 30);
     color: rgb(255, 255, 255);
     text-align: center; /*centraliza o texto*/
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 nav a{ /*nav navigation a a, de link, vou trabalhar só no link*/
     color: rgb(255, 255, 255);
@@ -20,27 +26,48 @@ nav a{ /*nav navigation a a, de link, vou trabalhar só no link*/
 #galeria{/*significa id, onde coloca-se por ex: id="galeria"*/
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;/*espaço entre elementos do id*/
-    justify-content: flex-start; /*reforçando que ele vai estar "flexivel"*/
+    gap: 30px;/*espaço entre elementos do id*/
+    justify-content: center; /*reforçando que ele vai estar "flexivel"*/
     padding: 20px;
 }
 .foto{
+    color: black;
     background: white;
     padding: 10px 10px 50px 10px; /*lat dir, esq, baixo e topo*/
     border: 3px solid black;
-    box-shadow: 0 2px 5px black;
-    width: 300px;/*largura*/
+    box-shadow: 0 3px 20px black;
+    width: 280px;/*largura*/
     text-align: center;/*alinhamento ao centro*/
     border-radius: 4px;
+    transition: 0.3s ease-in-out;
+    transform-origin: 100%;
 }
 .foto img{
     width: 100%;
-    height: auto;
+    height: 220px;
     object-fit: cover; /*efeito de sobrepor*/
     display: block;
+    box-shadow: 0 5px 20px gray;
+    filter: blur(3px);
+    transition: filter 0.0s ease;
+}
+.foto:hover{
+    transform: scale(1.50) rotate(-2deg);
+}
+.foto img:hover{
+transition: filter 0.2s ease-in;
+filter: blur(0px);
+transition: filter 0.2s ease-out;
+}
+.legenda{
+    margin-top: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+    font-style: italic;
+
 }
 footer{
-    font-size: xx-large;
     color: white;
+    font-size: xx-large;
     text-align: center;
 }
